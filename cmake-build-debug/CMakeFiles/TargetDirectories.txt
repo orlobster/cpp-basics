@@ -26,5 +26,6 @@
 /Users/nikitaorlov/Code/CLionProjects/test_project/cmake-build-debug/algorithms/CMakeFiles/a_algo.dir
 /Users/nikitaorlov/Code/CLionProjects/test_project/cmake-build-debug/algorithms/CMakeFiles/algo_main.dir
 /Users/nikitaorlov/Code/CLionProjects/test_project/cmake-build-debug/algorithms/CMakeFiles/algo_b.dir
+/Users/nikitaorlov/Code/CLionProjects/test_project/cmake-build-debug/algorithms/CMakeFiles/algo_c.dir
 /Users/nikitaorlov/Code/CLionProjects/test_project/cmake-build-debug/algorithms/CMakeFiles/edit_cache.dir
 /Users/nikitaorlov/Code/CLionProjects/test_project/cmake-build-debug/algorithms/CMakeFiles/rebuild_cache.dir

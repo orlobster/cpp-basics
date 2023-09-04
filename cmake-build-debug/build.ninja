@@ -806,6 +806,37 @@ build algorithms/algo_b: CXX_EXECUTABLE_LINKER__algo_b_Debug algorithms/CMakeFil
   TARGET_FILE = algorithms/algo_b
   TARGET_PDB = algo_b.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target algo_c
+
+
+#############################################
+# Order-only phony target for algo_c
+
+build cmake_object_order_depends_target_algo_c: phony || algorithms/CMakeFiles/algo_c.dir
+
+build algorithms/CMakeFiles/algo_c.dir/algo_c.cpp.o: CXX_COMPILER__algo_c_unscanned_Debug /Users/nikitaorlov/Code/CLionProjects/test_project/algorithms/algo_c.cpp || cmake_object_order_depends_target_algo_c
+  DEP_FILE = algorithms/CMakeFiles/algo_c.dir/algo_c.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  OBJECT_DIR = algorithms/CMakeFiles/algo_c.dir
+  OBJECT_FILE_DIR = algorithms/CMakeFiles/algo_c.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target algo_c
+
+
+#############################################
+# Link the executable algorithms/algo_c
+
+build algorithms/algo_c: CXX_EXECUTABLE_LINKER__algo_c_Debug algorithms/CMakeFiles/algo_c.dir/algo_c.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  OBJECT_DIR = algorithms/CMakeFiles/algo_c.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = algorithms/algo_c
+  TARGET_PDB = algo_c.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -839,6 +870,8 @@ build a_algo: phony algorithms/a_algo
 build a_containers: phony containers/a_containers
 
 build algo_b: phony algorithms/algo_b
+
+build algo_c: phony algorithms/algo_c
 
 build algo_main: phony algorithms/algo_main
 
@@ -891,7 +924,7 @@ build all: phony functions/all containers/all algorithms/all
 #############################################
 # Folder: /Users/nikitaorlov/Code/CLionProjects/test_project/cmake-build-debug/algorithms
 
-build algorithms/all: phony algorithms/a_algo algorithms/algo_main algorithms/algo_b
+build algorithms/all: phony algorithms/a_algo algorithms/algo_main algorithms/algo_b algorithms/algo_c
 
 # =============================================================================
 
